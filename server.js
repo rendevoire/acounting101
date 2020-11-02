@@ -18,5 +18,5 @@ app.use(express.json())
 const employeesRouter = require('./routes/employees')
 app.use('/employees', employeesRouter)
 
-
-app.listen(3000, () => console.log(`server started to port 3000`))
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log(`server started to port ${port}`))
