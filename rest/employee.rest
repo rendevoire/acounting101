@@ -1,0 +1,27 @@
+GET http://localhost:3000/employees
+
+###
+
+GET http://localhost:3000/employees/5f9ecdac3db9d62bc4fa6daf
+
+###
+
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "name": "Renato Cada jj",
+    "address": "Cebu City jj"
+}
+
+###
+PATCH http://localhost:3000/employees/5f9ecdf8215ccc0df826dbf8
+Content-Type: application/json
+
+{
+    "name": "Ren"
+}
+
+
+###
+DELETE http://localhost:3000/employees/5f9ecdac3db9d62bc4fa6daf
