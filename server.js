@@ -15,6 +15,9 @@ db.once('open', () => console.log('connected to database'))
 
 app.use(express.json())
 
+app.get('/', (req, res) => {
+    res.send('hello')
+})
 const employeesRouter = require('./routes/employees')
 app.use('/employees', employeesRouter)
 
