@@ -1,0 +1,14 @@
+GET http://localhost:3000/api/items
+
+###
+POST http://localhost:3000/api/items
+Content-Type: application/json
+
+{
+    "name": "speaker",
+    "type": "electrical appliance"
+}
+
+###
+
+DELETE http://localhost:3000/api/items/5fa41654b667fd4928e2f826
