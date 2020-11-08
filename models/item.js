@@ -14,6 +14,10 @@ const itemSchema = new mongoose.Schema({
         required: true,
         default: Date.now
     }
+},{
+    timestamps: {
+        createdAt: 'created_at'
+    }
 })
 
 module.exports = mongoose.model('Item', itemSchema)

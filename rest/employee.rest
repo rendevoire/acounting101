@@ -1,12 +1,12 @@
-GET http://localhost:3000/api/employees
+GET http://localhost:3000/api/v1/employees
 
 ###
 
-GET http://localhost:3000/api/employees/5f9ecdac3db9d62bc4fa6daf
+GET http://localhost:3000/api/v1/employees/5f9ecdac3db9d62bc4fa6daf
 
 ###
 
-POST http://localhost:3000/api/employees
+POST http://localhost:3000/api/v1/employees
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3000/api/employees/5f9ecdf8215ccc0df826dbf8
+PATCH http://localhost:3000/api/v1/employees/5f9ecdf8215ccc0df826dbf8
 Content-Type: application/json
 
 {
@@ -24,4 +24,4 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:3000/api/employees/5f9ece1a215ccc0df826dbf9
+DELETE http://localhost:3000/api/v1/employees/5f9ece1a215ccc0df826dbf9

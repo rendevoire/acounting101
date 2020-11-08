@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
         const items = await Item.find()
         res.json(items)
     } catch(err) {
-        res.sendStatus(500)
+        res.json({message: err.massage}).status(500)
     }
 })
 

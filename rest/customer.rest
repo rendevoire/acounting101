@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/v1/customers
+
+###
+
+// read one
+GET http://localhost:3000/api/v1/customers/5fa7eee8791e4838c434646f
+
+###
+
+POST http://localhost:3000/api/v1/customers
+Content-Type: application/json
+
+{
+    "name": "speaker",
+    "email": "test@gmail.com"
+}
+
+###
+
+
+PATCH http://localhost:3000/api/v1/customers/5fa7eee8791e4838c434646f
+Content-Type: application/json
+
+{
+    "name": "desktop4",
+    "email": "123@gmail.com"
+}
+
+###
+
+DELETE http://localhost:3000/api/v1/customers/5fa73bb68ccc6f4b4c03eb2d
+
+###
+
+DELETE http://localhost:3000/api/v1/customers/
